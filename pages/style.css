@@ -1,6 +1,7 @@
 body {
 	background-image: url('../images/background2.jpg');
 	background-repeat: repeat;
+	/*background-color: rgb(10, 50, 70);*/
 	
 }
 
@@ -9,27 +10,22 @@ body {
 	width: 1000px;
 	height: 1000px;
 	margin: 0 auto;
+	margin-top: 100px;
 	opacity: 0.7;
 	
 }
 
-#wrapper {
-	z-index: 1000;
-	width: auto;
-	opacity: 0.8;
-	border: solid black 4px;
-
-}
-
-#main_heading {
-	/*border: solid black 4px;*/
-	width: auto;
+header {
+	width: 100%;
 	height: 100px;
-	margin: 0 auto;
 	background-color: rgb(24, 173, 172);
-	/*display: block;*/
-
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	border: solid 2px black;
+	border-radius: 11px;
 }
+
 
 #heading_links {
 	width: 1000px;
@@ -40,26 +36,37 @@ body {
 
 #heading_links ul {
 	width: 1000px;
-	font-size: 35px;
+	font-size: 28px;
 	list-style-type: none;
 	margin: 0 auto;
 	padding-top: 30px;
-	padding-left: 200px;
+	padding-left: 270px;
 	display: inline-block;
+	text-align: center;
 	
 }
 
 #heading_links li {
 	color: white;
-	text-align: left;
 	padding-left: 10px;
 	padding-right: 10px;
 	display: inline;
 	margin: 0 auto;
+	font-family: arial; 
+}
+
+.introduction {
+	width: 1000px;
+	height: 700px;
+	border-radius: 11px;
+	background-color: white;
+	margin: 0 auto;
+	margin-top: 150px;
 }
 
 #education_list ul {
 	font-size: 23px;
+	color: white;
 
 }
 
@@ -86,16 +93,20 @@ a {
 	width: 75px;
 	height: 60px;
 	padding-top: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
 	margin: 0 auto;
 	display: inline-block;
+	border-radius: 11px;
 	
 }
 
 .text_areas{
-	/*border: solid black 2px;*/
 	width: auto;
 	height: auto;
 	background-color: white;
+	opacity: 0.7;
+	border-radius: 11px;
 	
 }
 
@@ -103,24 +114,44 @@ a {
 	margin-left:30%;
 	width: 300px;
 	height: 300px;
+	border-radius: 360px;
 }
  #youtube_videos img {
  	text-align: center;
  }
 
 .subheadings_text {
-	/*border: solid black 2px;*/
+	border: solid black 2px;
 	text-align: center;
 	height: 75px;
 	padding-top: 50px;
 	background-color: rgb(24, 173, 172);
 	color: white;
+	opacity: 0.7;
+	border-radius: 11px;
+	font-family: arial;
 
 }
 
 .section_writing {
 	text-align: left;
 	font-size: 23px;
-	padding-left: 5px;
+	padding-left: 10px;
+	color: black;
+	font-family: arial;
+}
+
+@media screen and (max-width: 1300px) {
+	body {
+		
+	}
+	header {
+		height: 300px;
+	}
+
+	header ul li {
+		display: block;
+	}
+
 
 }
